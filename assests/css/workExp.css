@@ -1,0 +1,170 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFDDE9;
+  font-size: 1em;
+  position: relative;
+  color: black;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+#backToHome span:before{
+  content: '\21FD';
+  color: white;
+}
+
+#title{
+  margin-top: 3em;
+  text-align: center;
+}
+#position{
+  font-weight: 700;
+  font-size: 2em;
+  padding-top: 20px;
+}
+#date{
+  font-size: 1em;
+}
+
+#description{
+  box-sizing: border-box;
+  padding-top: 2em;
+  padding-left: 3em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.visitSite{
+  width: 100%;
+}
+#visitSite{
+  background-color: inherit;
+  border: 1px solid #d97f8d;
+  color: #d97f8d;
+  padding: 0.5em;
+}
+#visitSite:hover{
+  background-color: #782331;
+}
+
+.grid-container{
+  display: grid;
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+  grid-template-rows: auto auto;
+  grid-template-columns: 25% 65%;
+  box-sizing: border-box;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  height: auto;
+}
+.grid-item {
+  box-sizing: border-box;
+  line-height: 1.5em;
+  padding-left: 3em;
+  text-align: left;
+  /* border: solid red; */
+}
+
+.grid-container-researchInner{
+  display: grid;
+  grid-column-gap: 4%;
+  grid-template-rows: auto auto;
+  grid-template-columns: 43% 43%;
+  /* border: solid purple; */
+}
+
+/*WESTxEAST*/
+.prototype_front, .prototype_gallery, .finalFrontGallery{
+  grid-column: 1 / span 2;
+  grid-row: 4, 6, 7;
+  margin-top: -8%;
+  /* border: solid blue; */
+}
+/*New Age Drinks*/
+.prototype, .finalImgs{
+  grid-column: 1 / span 2;
+  grid-row: 4, 6;
+  margin-top: -10%;
+  /* border: solid blue; */
+}
+
+/*Scroll Button*/
+#upImg{
+  width: 3em;
+  height: 3em;
+  float: right;
+  bottom: auto;
+  position: relative;
+  margin-bottom: 35%;
+}
+
+#topButton {
+    position: fixed;
+    bottom: 1em;
+    right: 30px;
+    display: none;
+}
+
+#topButton:hover {
+  cursor: pointer;
+  width: 3.5em;
+  height: 3.5em;
+}
+
+#copyrightBar{
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  padding: 0.5em;
+  width: 100%;
+  font-family: 'Cinzel', serif;
+  bottom: auto;
+  margin-top: 60%;
+}
+
+
+/*Smartphone View*/
+@media screen and (max-width:600px){
+#description{
+  padding-left: 0;
+}
+
+.grid-container{
+  grid-column-gap: 5%;
+  grid-row-gap: 2%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10%;
+}
+
+.grid-container-researchInner{
+  display: grid;
+  grid-column-gap: 4%;
+  grid-template-rows: auto auto;
+  grid-template-columns: 43% 43%;
+  /* border: solid purple; */
+  }
+
+.research{
+  grid-column: 1 / span 2;
+  margin-top: -10%;
+}
+
+#copyrightBar{
+    margin-top: 105%;
+  }
+}
