@@ -42,6 +42,20 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+* {
+	box-sizing: border-box;
+}
+
+.row {
+display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+flex: 16.66%;
+padding: 0;
+}
+  
 #logoPage {
 	width:100%;
     height:100vh;
