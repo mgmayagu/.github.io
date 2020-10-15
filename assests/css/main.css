@@ -47,12 +47,16 @@ body {
 }
 
 .row {
-display: flex;
+	display:flex;
+	background-color: black; 
+	max-width:100%;
+	max-height: fit-content;
+	align-items: flex-end;
 }
 
 /* Create three equal columns that sits next to each other */
 .column {
-flex: 16.66%;
+flex: 16.6%;
 padding: 0;
 }
   
@@ -69,7 +73,7 @@ padding: 0;
 .swap-on-hover {
 	position: relative;	
 	margin:  0 auto;
-	 max-width: 400px;
+	/*max-width: 400px;*/
 }
   
 /* Select the image and make it absolute to the container */
@@ -79,8 +83,8 @@ padding: 0;
 	left:0;
 	overflow: hidden;
 	/* Sets the width and height for the images*/
-	width: 550px;
-	height: 550px;
+	/*width: 550px;
+	height: 550px; */
   }
   
 /* 
