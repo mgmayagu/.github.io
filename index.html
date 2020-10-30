@@ -1,146 +1,571 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>MM's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assests/css/main.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MM's Portfolio</title>
+  <meta name="description" content="Personal Portfolio">
+    <meta name="author" content="Michael Mayaguari">
 
-	</head>
-	 
-	<body>
-		
-		<div id="logoPage" >
-			<h1 class="ml11">
-				<span class="text-wrapper">
-					<span class="line line1"></span>
-					<span class="letters">hi there</span>
-				</span>
-			</h1>
-			
-			<a href="#"> <figure class="swap-on-hover" style="max-width: 400px;">
-				<img  class="swap-on-hover__front-image" src="images/logo.png" alt="Logo" style="width: 550px;; height: 550px;"/>
-				<img class="swap-on-hover__back-image" src="images/fullLogo.png" alt="Logo" style="width: 550px;; height: 550px;"/>
-			</figure></a>
-			
-			<div id="downArrow">
-				<a href="#"> <img src="images/downArrow.png" alt="arrow" style="height: 25px; width: auto;"> </a>
-			</div>    
-		</div>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
-		<!-- Main -->
-		<section id="main">
-			<!-- Bio and background-->
-			<div class="inner" style="margin-bottom: 3%; opacity: .8;">
-				<!-- Bioagraphy -->
-				<section id="two" class="wrapper style2">
-					<header>
-						<h2>WHO AM I?</h2>
-						<p> MICHAEL MAYAGUARI </p>
-					</header>
-					<div class="content">
-						<div class="gallery">
-							<div>
-								<div class="image fit flush">
-									<img src="images/Timeline.png" alt="Timeline" />
-								</div>
-							</div>
-							<div>
-								<div class="image fit flush">
-									<a href="https://github.com/mgmayagu/Visualization/blob/master/data/MM_2019_Data.csv"><img src="images/mm.jpeg" alt="" /></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+  <!-- Stylesheet
+      ================================================== -->
+  <link rel="stylesheet" type="text/css"  href="css/style.css">
+  <link rel="stylesheet" type="text/css"  href="css/experience.css">
+  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+  
+</head>
 
-				<section class="wrapper style1">
-					<div class="content">
-						<p style="font-size:20px;color: #073B4C;">
-							Born and raised in Ecuador... 
-						</p>
-					</div>
-				</section>
-			</div>
- 
-			<div class="inner">
-				<section id="one" class="wrapper style1">
-					
-					<header >
-						<h2>Portfolio</h2>
-						<p>  Explore my portfolio, i will continue to add more.	</p>
-					</header>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
 
-					<div class="row">
-						<div class="column">
-							<a href="experience.html"> <figure class="swap-on-hover">
-								<img  class="swap-on-hover__front-image" src="images/experience.png" alt="Experience" >
-								<img class="swap-on-hover__back-image" src="images/label_exp.png" alt="Experience" >
-							</figure></a>
-						</div>
-						<div class="column">
-							<a href="#"> <figure class="swap-on-hover">
-								<img  class="swap-on-hover__front-image" src="images/projects.png" alt="Projects">
-								<img class="swap-on-hover__back-image" src="images/label_proj.png" alt="Projects">
-							</figure></a>
-						</div>
-						<div class="column">
-							<a href="#"> <figure class="swap-on-hover">
-								<img  class="swap-on-hover__front-image" src="images/finance.png" alt="Finance">
-								<img class="swap-on-hover__back-image" src="images/label_inv.png" alt="Finance">
-							</figure></a>
-						</div>
-						<div class="column">	
-							<a href="#"> <figure class="swap-on-hover">
-								<img  class="swap-on-hover__front-image" src="images/photography.png" alt="Photograpgy">
-								<img class="swap-on-hover__back-image" src="images/label_photo.png" alt="Photograpgy">
-							</figure></a>
-						</div>
-						<div class="column">
-							<a href="#"> <figure class="swap-on-hover">
-								<img  class="swap-on-hover__front-image" src="images/startup.png" alt="Startup">
-								<img class="swap-on-hover__back-image" src="images/label_su.png" alt="Startup">
-							</figure></a>
-						</div>
-						<div class="column">
-							<a href="#"> <figure class="swap-on-hover">
-								<img  class="swap-on-hover__front-image" src="images/contact.png" alt="Contact">
-								<img class="swap-on-hover__back-image" src="images/label_contact.png" alt="Finance">
-							</figure></a>
-						</div>
-					</div>
-				</section>
-			</div>
-		</section>
+  <!-- Navigation -->
+  <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+          <span class="sr-only">Navigation</span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">
+          <em class="fa fa-play fa-rotate-270"></em> MM</a> 
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#page-top" class="page-scroll">Home</a></li>
+          <li><a href="#about" class="page-scroll">About</a></li>
+          <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+          <li><a href="#experience" class="page-scroll">Experience</a></li>
+          <li><a href="#contact" class="page-scroll">Contact</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </div>
+    <!-- /.container-fluid --> 
+  </nav>
 
-			<div style="text-align: center; margin: 25vh;">
-				<h1 class="ml4">
-					<span class="letters letters-1">WEBSITE</span>
-					<span class="letters letters-2">UNDER</span>
-					<span class="letters letters-3">CONSTRUCTION!</span>
-				</h1>
-				
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-			</div> 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="container">
-				<ul class="icons">
-					<li><a href="https://github.com/mgmayagu/" class="icon fa-github"><span class="label">github</span></a></li>
-				</ul>
-			</div>
-			<div class="copyright">
-				&copy; Michael Mayaguari - New York 2020. All rights reserved. </a>
-			</div>
-		</footer>
+  <!-- Header -->
+  <header id="header">
+    <div class="intro">
+      <div class="container">
+        <div class="row">
 
-		<!-- Scripts -->
-		<script src="assests/js/index.js"></script> 
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+          <div class="intro">
 
-	</body>
+            <a href="#about"> <figure class="swap-on-hover">
+              <img  class="swap-on-hover__front-image" src="images/logo.png" alt="Logo" />
+              <img class="swap-on-hover__back-image" src="images/fullLogo.png" alt="Logo" />
+            </figure></a>
+
+            <a href="#about" class="btn btn-custom btn-lg page-scroll">Explore</a> </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="section-title text-center center">
+        <h2>About Me</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6"> 
+          <img src="images/profile.jpeg" class="img-responsive" alt=""> 
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="about-text">
+            <p>Michael Mayaguari is an Ecuadorian Computer Science student at 
+              The City College of New York. His expecting graduation date is on May 2021. </p>
+            <p>Michael is a first generation immigrant student whose passion for technology 
+              and math has driven him to pursue a bachelors in Computer Science. </p>
+            <a href="#portfolio" class="btn btn-default btn-lg page-scroll">Portfolio</a> </div>
+        </div>
+      </div>
+
+      <div class="section-title text-center center" style="padding: 75px 0 20px 0;">
+        <h2>Skills</h2>
+        <hr>
+        <p>Some of the technical skills I've aquired</p>
+      </div>
+
+      <div class="row">
+        <div class="col-m-12 col-md-6" >
+          <h3>FRONTEND</h3> 
+          <!-- HTML5 -->
+          <p>HTML5</p>
+          <div class="progress">
+            <div class="progress-value-1"></div>
+          </div>
+            
+          <!-- CSS3 -->
+          <p>CSS3</p>
+          <div class="progress">
+            <div class="progress-value-2"></div>
+          </div>
+            
+          <!-- React.js -->
+          <p >React.js</p>
+          <div class="progress">
+            <div class="progress-value-3"></div>
+          </div>   
+        </div>
+
+        <div class="col-m-12 col-md-6" >
+          <h3>BACKEND</h3>
+          <!-- Python -->
+          <p>Python</p>
+          <div class="progress">
+            <div class="progress-value-4"></div>
+          </div>
+              
+          <!-- SQL -->
+          <p>SQL</p>
+          <div class="progress">
+            <div class="progress-value-5"></div>
+          </div>
+              
+          <!-- Node.js -->
+          <p>Node.js</p>
+          <div class="progress">
+            <div class="progress-value-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <!-- <div id="portfolio">
+    <div class="container">
+      <div class="section-title text-center center">
+        <h2>Portfolio</h2>
+        <hr>
+      </div>
+      <div class="categories">
+        <ul class="cat">
+          <li>
+            <ol class="type">
+              <li><a href="#" data-filter="*" class="active">All</a></li>
+              <li><a href="#" data-filter=".web">Web Design</a></li>
+              <li><a href="#" data-filter=".photography">Photography</a></li>
+              <li><a href="#" data-filter=".product">Product Design</a></li>
+            </ol>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row">
+        <div class="portfolio-items">
+          <div class="col-sm-6 col-md-3 col-lg-3 web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 product">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 product">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 photography">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 photography">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 product">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 photography">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/10-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/10-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 photography">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/11-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/11-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="img/portfolio/12-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Project Title</h4>
+                </div>
+                <img src="img/portfolio/12-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Experience Section -->
+  <div id="experience">
+    <div class="experience-label colorExperience">
+      <div class="container">
+        <div>
+          <h4>"Experience is the teacher of all things"</h4>
+          <p>- Julius Caesar</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <article>
+        <h2>Work</h2>
+        <div>
+          <h3>Career</h3>
+          <p>I am a New York based Computer Science Student with experience 
+            in front-end development and customer service.
+          </p>
+
+          <div class="timeline-container">
+
+            <div class="timeline-block timeline-block-right">
+               <div class="marker"></div>
+               <div class="timeline-content">
+                  <h3>CodeAdvantage.org</h3>
+                  <span>May 2020 - Present</span>
+                  <p>Preparing and inspiring the next generation of technology 
+                    leaders by teaching Roblox Lua in an engaging and fun manner. 
+                  </p>
+               </div>
+            </div>
+         
+            <div class="timeline-block timeline-block-left">
+               <div class="marker"></div>
+               <div class="timeline-content">
+                  <h3>Edge Hotel</h3>
+                  <span>September 2017 – December 2019</span>
+                  <p>
+                    Managed bookings and  billings of guests, 
+                    reviewed daily financial reports, and handled guests’ 
+                    complaints quickly and professionally.
+                  </p>
+               </div>
+            </div>
+         
+            <div class="timeline-block timeline-block-right">
+               <div class="marker"></div>
+               <div class="timeline-content">
+                  <h3>Hudson River Electric Inc</h3>
+                  <span>2016 – 2017</span>
+                  <p>
+                    Read, interpreted, and executed 
+                    residential/commercial electrical equipment installations.
+                  </p>
+               </div>
+            </div>
+        
+         </div>
+
+        </div>
+      </article>
+
+      <article>
+        <h2>Internship</h2>
+        <div>
+          <h3>Data Scientist Intern at Pfizer</h3>
+          <div class="internship-container">
+              <img class="mySlides container__image" src="images/internship_1.jpeg" alt="Internship">
+              <img class="mySlides container__image" src="images/internship_2.jpeg" alt="Internship">
+              <img class="mySlides container__image" src="images/internship_3.jpeg" alt="Internship">
+              <img class="mySlides container__image" src="images/internship_4.jpeg" alt="Internship">
+              <img class="mySlides container__image" src="images/internship_5.jpeg" alt="Internship">
+            
+            <div class="container__text">
+              <p> Throught the Co-Op program at City College. I spent 6 months learning, solving 
+                challanges and networking with profesionals who mentored and guide me.
+              </p>
+              <h6> Projects I was involved:</h6>
+              <ul>
+
+                <li class="circle">Alexa Skill: </li>
+                <p> 
+                  Developed a full functioning
+                  Alexa Skil using a Lambda function written in Python3 and stored in 
+                  Amazon AWS. My main goal was to templarize this tool in such a way people 
+                  with no coding experience to be able to create a new skills. I was successful 
+                  in creating the required skill and I was able to combine it with 
+                  the 91% accurate model previously created by the team.
+                </p>
+
+                <li class="circle">Map Widget: </li>
+                <p> 
+                  Using raw data, I crated a map widget to pinpoint specific locations 
+                  in a google Maps JavaScript API. Once again, my objective was to templarize
+                  this project and to do so, i started by cleaning the data and converting 
+                  the addresses into Lat and Long coorditaes without losing precision. This way, 
+                  anyone can represent a specifict location using coordinates only.                     
+                </p>
+              
+                <li class="circle"> Data Visualization Web App (Front-end Development): </li>
+                <p> 
+                  To conclude, I wanted to dive into Data Visualition. And took on a project to 
+                  create a web application that could be used internally to show the best 
+                  practices of data visualizations. I started by doing my research and putting toegther
+                  all the resources with the help of my mentor. Then I initialized the front-end 
+                  development using React.js, unfortunally my time at Pfizer was over in the middle of 
+                  this project.
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h2>Volunteering</h2>
+        <div>
+          <h3>Community</h3>
+          <p> 
+            As a first-generation immigrant college student, I want to inspire kids to pursue 
+            higher education in STEM, the best way to do so is by beign part of organizations
+            that help with resources and create opportunities for minorities to get involved in tech.
+          </p>
+
+          <div class="row volunteering-section">
+            <div class="col-xs-12 col-md-6 v-img"> 
+              <a href="https://www.americaontech.org/">
+                <img src="images/AOT.png" style="width: 300px;" alt="AOT"> 
+              </a>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <a href="https://www.americaontech.org/"><h4> America on Tech </h4></a>
+              <span> Lead Instructor </span>
+              <p>
+                America On Tech's mission is to prepare the next generation of technology leaders in 
+                order to decrease the economic and racial wealth gap in underestimated communities.
+              </p>
+            </div>
+            <div class="col-xs-12 col-md-6"> 
+              <a href="https://www.coved.org/"><h4> CovEducation </h4></a>
+              <span> Mentor </span>
+              <p>
+                <a href="youtu.be/7m5qBKAeqk4"> <strong> CovEducation </strong></a> aims to promote greater access to web-based curricula 
+                and academic support for K-12 students, facilitating the transition 
+                to virtual learning for students with limited access to resources.
+              </p>
+            </div>
+            <div class="col-xs-12 col-md-6 v-img">
+              <a href="https://www.coved.org/">
+                <img src="images/covEd.jpg"  style="width: 200px;" alt="covEd"> 
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h2>Out of hours</h2>
+        <div>
+          <h3>Out of hours</h3>
+          <p>In my spare time I work on my entreprenourship ventures.</p>
+          <div class="row ooh-section">
+            <div class="col-xs-12 col-md-6 v-img"> 
+              <a href="https://anchor.fm/shots-of-info">
+                <img src="images/shotsofInfo.png" style="width: 175px;" alt="shots-of-info"> 
+              </a>
+            </div>
+            <div class="col-xs-12 col-md-6 ">
+              <a href="https://www.americaontech.org/"><h4> Shots of Info </h4></a>
+              <span> Co-host </span>
+              <p>
+                Young college kids finding their way and putting in the 
+                work pursuing financial freedom and personal growth.
+                Daily morning talk podcast with Randy about topics of fincance,
+                fitness, and personal growth.
+              </p>
+            </div>
+
+            <div class="col-xs-12 col-md-6 v-img">
+              <a href="http://iocrea.com/">
+                <img src="images/startup.png"  style="width: 175px; " alt="startup"> 
+              </a>
+            </div>
+            <div class="col-xs-12 col-md-6"> 
+              <a href="https://www.coved.org/"><h4> iocrea </h4></a>
+              <span> Freelance </span>
+              <p>
+                Digital marketing start-up I've been working to increase local shops digital 
+                footprints at an affordable price. 
+              </p>
+              <p> Companies I work with include:</p>
+              <ul>
+                <li><a href="https://www.bronxviewcommunity.org/">BronxView Community Inc</a> </li>
+                <li><a href="https://www.pizzakingmtvernon.com/">Pizza KIng Restaurant</a> </li>
+
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>Social</h2>
+        <div class="col-6">
+          <h3>Me, Myself, and I</h3>
+          <div class="social">
+            <ul>
+              <li><a href="https://www.instagram.com/mg._.ml/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/michaelmayaguari/"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/mgmayagu"><i class="fa fa-github"></i></a></li>
+              <li><a href="assets/Michael Mayaguari - Resume .pdf"><i class="fa fa-file"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <!-- <h3>Feeds I read</h3>
+          <ul>
+            <li><a href="http://www.90percentofeverything.com/">90 Percent of Everything</a></li>
+            <li><a href="http://www.adaptivepath.com/">Adaptive Path</a></li>
+            <li><a href="https://alistapart.com/">A List Apart</a></li>
+            <li><a href="https://boagworld.com/">Boag World</a></li>
+          </ul> -->
+          <img src="images/me.jpeg" alt="mm" style="width: 90%;">
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="text-center">
+    <div class="container">
+      <div class="section-title center">
+        <h2>Get In Touch</h2>
+        <hr style="color: #06D6A0;">
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+            <p class="help-block text-danger"></p>
+          </div>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-default btn-lg">Send Message</button>
+        </form>
+        <div class="social">
+          <ul>
+            <li><a href="https://www.instagram.com/mg._.ml/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/michaelmayaguari/"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/mgmayagu"><i class="fa fa-github"></i></a></li>
+              <li><a href="assets/Michael Mayaguari - Resume .pdf"><i class="fa fa-file"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="container text-center">
+      <div class="fnav">
+        <p>Copyright &copy; 2020 Michael Mayaguari. Designed by <a href="" rel="nofollow">MM</a></p>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/jquery.nicescroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
