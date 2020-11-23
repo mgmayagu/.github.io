@@ -38,7 +38,7 @@
     color: #fff !important;
 }
 #experience > div + div {
-    background: #801638;
+    background: #073B4C;
 }
 #experience > div + div article:nth-child(1) {
     background: #4c1807;
@@ -56,11 +56,11 @@
     background: #073B4C;
 }
 #experience {
-    height: 100vh;
+    height: auto;
 }
 
 #experience > div + div {
-    width: 100vw;
+    width: 100%;
     height: 80vh;
 }
 #experience h2 {
@@ -135,6 +135,7 @@ article:hover > div {
 article > div {
     text-align: left;
     width: 58vw;
+    height: 100vmax;
 }
 article > div p, article > div h2, article > div h3 {
     margin: 0 0 1em 0;
@@ -205,37 +206,6 @@ a {
 	color: #073B4C;
 }
 
-
-@media (max-width: 900px) {
-    #experience > div + div article {
-        padding: 2vh 3vw;
-   }
-    #experience > div + div article > h2 {
-        transform: rotate(90deg);
-        bottom: 23vh;
-        min-width: 12em;
-        text-align: left;
-        transform: rotate(-90deg);
-        transform-origin: 0 0 0;
-        opacity: 1;
-   }
-    #experience > div + div article:hover > h2 {
-        opacity: 0;
-   }
-    article div {
-        max-height: calc(100%);
-        overflow-y: auto;
-   }
-    article div article div p {
-        width: 50vw;
-   }
-}
-
-.internship-container {
-    padding: 5px 10px 0;
-    max-width: 100vw;
-    /* overflow: scroll; */
-}
 .container__image {
     width: 250px;
     margin: 0 0 10px 10px;
@@ -244,8 +214,6 @@ a {
 .container__text {
     display: inline;
 }
-
-
 
 /* TIMELINE CSS */
 .timeline-container {
@@ -335,6 +303,56 @@ a {
     color: #888;
  }
  
+
+
+@media (max-width: 1040px) {
+    #experience > div + div article {
+        padding: 1vh 2vw;
+   }
+    article div {
+        max-height: calc(100%);
+        /* overflow-y: auto; */
+   }
+
+   .internship-container {
+        padding: 5px 0 15px 0;
+        overflow-y: auto;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .internship-container::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    #experience > div + div article {
+        padding: 2vh 3vw;
+   }
+    #experience > div + div article > h2 {
+        transform: rotate(90deg);
+        bottom: 23vh;
+        min-width: 12em;
+        text-align: left;
+        transform: rotate(-90deg);
+        transform-origin: 0 0 0;
+        opacity: 1;
+   }
+    #experience > div + div article:hover > h2 {
+        opacity: 0;
+   }
+    article div {
+        max-height: calc(100%);
+        overflow-y: auto;
+   }
+    article div article div p {
+        width: 50vw;
+   }
+}
+
  
  @media screen and (max-width: 768px) {
     .container:before {

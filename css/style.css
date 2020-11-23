@@ -83,6 +83,7 @@ hr {
 	margin-bottom: 30px;
 	border: 0;
 }
+
 /* Navigation */
 #menu {
 	padding: 20px;
@@ -169,6 +170,7 @@ hr {
 	color: #06D6A0;
 	background-color: #343b42;
 }
+
 /* Header Section */
 .intro {
 	position: relative;
@@ -205,7 +207,7 @@ hr {
 
 /* About Section */
 #about {
-	padding: 50px 0;
+	padding: 10px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06D6A0+0,54d0dd+0,54d0dd+0,7fdce6+0,54d0dd+100 */
 	background: rgb(6, 214, 160); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(6, 214, 160,1) 0%, rgba(6, 214, 160,1) 0%, rgba(6, 214, 160,1) 0%, rgba(255,255,255,1) 0%, rgba(6, 214, 160,1) 100%); /* FF3.6-15 */
@@ -224,6 +226,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06D6A0', end
 	margin-bottom: 30px;
 	line-height: 21px;
 }
+.img-responsive {
+	height: 450px;
+	width: auto;
+}
+
 
 /* Portfolio Section */
 #portfolio {
@@ -451,7 +458,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 #footer {
 	background: #343b42;
 	color: rgba(255,255,255,0.4);
-	padding: 30px 0 25px 0;
+	padding: 15px 0 10px 0;
 }
 #footer p {
 	font-size: 13px;
@@ -512,7 +519,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	padding: 0 5px;
 	display: flex;
 	height: 30px;
-	width: 450px;
+	width: auto;
 }
   
 .progress-value-1 {
