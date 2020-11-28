@@ -227,8 +227,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06D6A0', end
 	line-height: 21px;
 }
 .img-responsive {
-	height: 450px;
-	width: auto;
+	/* height: max-content; */
+	width: fit-content;
 }
 
 
@@ -470,19 +470,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #06D6A0;
 }
 
-@media (max-width: 1024px) {
-	#about img {
-		float: left;
-		margin-bottom: 20px;
-	}
-}
-@media (max-width: 1000px) {
-	#about .about-text {
-		margin-left: 10px;
-		margin-top: 0;
-	}	
-}
-
+/* image swapping */
 .swap-on-hover {
 	position: relative;	
 	margin:  20vh auto;
@@ -509,7 +497,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .swap-on-hover:hover > .swap-on-hover__front-image{
 	opacity: 0;
 }
-
+ /* progress bars for skills */
 .progress {
 	background: rgba(7, 59, 76,.5);
 	justify-content: flex-start;
@@ -601,9 +589,35 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	100% { width: 30%; }
 }
 
+/* resizing screens */
 
+@media (max-width: 1024px) {
+	#about img {
+		float: left;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 1000px) {
+	#about .about-text {
+		margin-left: 10px;
+		margin-top: 0;
+	}	
+}
 
-				
+@media (max-width: 425px) {
+	#about .about-text {
+		margin-left: 10px;
+		margin-top: 0;
+	}	
 
+	.intro {
+		background: url(../images/Mobile.png) repeat center center fixed;
+	}
+	.intro img{
+        display: none;
+	}
 
-
+	.btn-custom {
+		right: 35%;
+	}
+}

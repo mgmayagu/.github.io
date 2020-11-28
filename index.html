@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>MM's Portfolio</title>
   <meta name="description" content="Personal Portfolio">
-    <meta name="author" content="Michael Mayaguari">
+  <meta name="author" content="Michael Mayaguari">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
@@ -17,6 +17,7 @@
   <link rel="stylesheet" type="text/css"  href="css/experience.css">
   <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
   <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+  <link rel="icon" href="images/tab-MM.png">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
   
 </head>
@@ -45,7 +46,7 @@
           <li><a href="#about" class="page-scroll">About</a></li>
           <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
           <li><a href="#experience" class="page-scroll">Experience</a></li>
-          <li><a href="#contact" class="page-scroll">Contact</a></li>
+          <!-- <li><a href="#contact" class="page-scroll">Contact</a></li> -->
         </ul>
       </div>
       <!-- /.navbar-collapse --> 
@@ -85,31 +86,32 @@
         </div>
         <div class="col-xs-12 col-md-6">
           <div class="about-text">
-            <p>Michael Mayaguari is an Ecuadorian Computer Science student at 
-              The City College of New York. His expecting graduation date is on May 2021. </p>
-            <p>Michael is a first generation immigrant student whose passion for technology 
-              and math has driven him to pursue a bachelors in Computer Science. </p>
+            <p>Michael Mayaguari is an astute Ecuadorian Computer Science student at 
+              The City College of New York graduating on May 2021. </p>
+            <p>Michael is a first generation immigrant student with data analysis and 
+              customer service experience seeking an opportunity as data analyst in the 
+              financial services technology industry. He is assionate about learning and 
+              creative thinking to innovate and to find permanent solutions.</p>
             <a href="#portfolio" class="btn btn-default btn-lg page-scroll">Portfolio</a> </div>
         </div>
       </div>
-
       <div class="section-title text-center center" style="padding: 75px 0 20px 0;">
         <h2>Skills</h2>
         <hr>
-        <p>Some of the technical skills I've aquired</p>
+        <p>Technical skills I've aquired</p>
       </div>
 
       <div class="row">
         <div class="col-m-12 col-md-6" >
           <h3>FRONTEND</h3> 
           <!-- HTML5 -->
-          <p>HTML5</p>
+          <p>HTML</p>
           <div class="progress">
             <div class="progress-value-1"></div>
           </div>
             
           <!-- CSS3 -->
-          <p>CSS3</p>
+          <p>CSS</p>
           <div class="progress">
             <div class="progress-value-2"></div>
           </div>
@@ -130,7 +132,7 @@
           </div>
               
           <!-- SQL -->
-          <p>SQL</p>
+          <p>MySQL</p>
           <div class="progress">
             <div class="progress-value-5"></div>
           </div>
@@ -146,99 +148,115 @@
   </div>
 
   <!-- Portfolio Section -->
-  <!-- <div id="portfolio">
+  <div id="portfolio">
     <div class="container">
       <div class="section-title text-center center">
         <h2>Portfolio</h2>
         <hr>
       </div>
+      
       <div class="categories">
         <ul class="cat">
           <li>
             <ol class="type">
               <li><a href="#" data-filter="*" class="active">All</a></li>
-              <li><a href="#" data-filter=".web">Web Design</a></li>
-              <li><a href="#" data-filter=".photography">Photography</a></li>
+              <li><a href="#" data-filter=".web">Web Development</a></li>
               <li><a href="#" data-filter=".product">Product Design</a></li>
+              <li><a href="#" data-filter=".finance">Finance</a></li>
+              <li><a href="#" data-filter=".project">Project</a></li>
+
             </ol>
           </li>
         </ul>
         <div class="clearfix"></div>
       </div>
+
       <div class="row">
         <div class="portfolio-items">
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                <div class="hover-text">
-                  <h4>Project Title</h4>
-                </div>
-                <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-            </div>
-          </div>
+
           <div class="col-sm-6 col-md-3 col-lg-3 product">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a href="https://github.com/mgmayagu/The-Hive" target="_blank" title="The Hive" data-lightbox-gallery="gallery1">
                 <div class="hover-text">
-                  <h4>Project Title</h4>
+                  <h4>The Hive</h4>
                 </div>
-                <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-            </div>
+                <img src="images/portfolio/theHive-small.png" class="img-responsive" alt="The Hive"> </a> 
+              </div>
+            </div>  
           </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
+
+          <div class="col-sm-6 col-md-3 col-lg-3 web finance">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a href="https://github.com/mgmayagu/Financial-Data-Analysis-Visualization" target="_blank" title="Financial Data Analysis" data-lightbox-gallery="gallery1">
+                <a href="https://github.com/mgmayagu/Financial-Data-Analysis-Visualization "></a>
                 <div class="hover-text">
-                  <h4>Project Title</h4>
+                  <h4>Financial Data Analysis</h4>
                 </div>
-                <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <img src="images/portfolio/dataViz-small.png" class="img-responsive" alt="Financial Data Analysis"> </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                <div class="hover-text">
-                  <h4>Project Title</h4>
-                </div>
-                <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-            </div>
-          </div>
+          
           <div class="col-sm-6 col-md-3 col-lg-3 product">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a href="https://github.com/mgmayagu/add-n-tip "  target="_blank" title="add-n-tip" data-lightbox-gallery="gallery1">
                 <div class="hover-text">
-                  <h4>Project Title</h4>
+                  <h4>add-n-tip</h4>
                 </div>
-                <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <img src="images/portfolio/add-n-tip-small.png" class="img-responsive" alt="add-n-tip"> </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 photography">
+              
+          <div class="col-sm-6 col-md-3 col-lg-3 web project">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a href="https://github.com/mgmayagu/mgmayagu.github.io" target="_blank" title="Personal Website" data-lightbox-gallery="gallery1">
                 <div class="hover-text">
-                  <h4>Project Title</h4>
+                  <h4>Personal Website</h4>
                 </div>
-                <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <img src="images/portfolio/mm-small.png" class="img-responsive" alt="Personal Website"> </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 photography">
+      
+          <div class="col-sm-6 col-md-3 col-lg-3 web product">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a href="https://www.pizzakingmtvernon.com/" target="_blank" title="Pizza King Restaurant" data-lightbox-gallery="gallery1">
                 <div class="hover-text">
-                  <h4>Project Title</h4>
+                  <h4>Pizza King Restaurant</h4>
                 </div>
-                <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <img src="images/portfolio/pkr-small.png" class="img-responsive" alt="Pizza King Restaurant"> </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
+              
+          <div class="col-sm-6 col-md-3 col-lg-3 web product">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a href="https://www.bronxviewcommunity.org/" target="_blank" title="Bronxview Community Inc" data-lightbox-gallery="gallery1">
                 <div class="hover-text">
-                  <h4>Project Title</h4>
+                  <h4>Bronxview Community Inc</h4>
                 </div>
-                <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                <img src="images/portfolio/bv-small.png" class="img-responsive" alt="Bronxview Community Inc"> </a> </div>
             </div>
           </div>
+         
+          <div class="col-sm-6 col-md-3 col-lg-3 web product project">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="images/portfolio/io-crea-large.png" target="_blank" title="In Progress" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>io.crea</h4>
+                </div>
+                <img src="images/portfolio/io-crea-small.png" class="img-responsive" alt="io.crea"> </a> </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 col-lg-3 project">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="https://anchor.fm/shots-of-info" target="_blank" title="Shots of Info" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Shots of Info</h4>
+                </div>
+                <img src="images/portfolio/soi-small.png" class="img-responsive" alt="Shots of Info"> </a> </div>
+            </div>
+          </div>
+                      <!-- 
+
           <div class="col-sm-6 col-md-3 col-lg-3 product">
             <div class="portfolio-item">
               <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
@@ -275,10 +293,11 @@
                 <img src="img/portfolio/12-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
             </div>
           </div>
+           -->
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <!-- Experience Section -->
   <div id="experience">
@@ -423,7 +442,7 @@
               <a href="https://www.coved.org/"><h4> CovEducation </h4></a>
               <span> Mentor </span>
               <p>
-                <a href="youtu.be/7m5qBKAeqk4"> <strong> CovEducation </strong></a> aims to promote greater access to web-based curricula 
+                <a href="https://www.youtube.com/watch?v=7m5qBKAeqk4&feature=youtu.be" target="_blank"> <strong> CovEducation </strong></a> aims to promote greater access to web-based curricula 
                 and academic support for K-12 students, facilitating the transition 
                 to virtual learning for students with limited access to resources.
               </p>
@@ -466,7 +485,7 @@
             </div>
             <div class="col-xs-12 col-md-6"> 
               <a href="https://www.coved.org/"><h4> iocrea </h4></a>
-              <span> Freelance </span>
+              <span> Freelancer </span>
               <p>
                 Digital marketing start-up I've been working to increase local shops digital 
                 footprints at an affordable price. 
