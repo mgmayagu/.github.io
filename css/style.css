@@ -16,7 +16,7 @@ h2 {
 	font-weight: 400;
 	font-size: 36px;
 	color: #414a52;
-	
+
 }
 h3 {
 	font-size: 25px;
@@ -49,7 +49,7 @@ a:hover, a:focus {
 	color: #343b42;
 }
 ul, ol {
-	list-style: none;
+	list-style: outside;
 }
 .clearfix:after {
 	visibility: hidden;
@@ -217,7 +217,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06D6A0', end
 }
 #about .about-text {
 	margin-left: 10px;
-	margin-top: 25vh;
 }
 #about img {
 	float: right;
@@ -472,11 +471,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 /* image swapping */
 .swap-on-hover {
-	position: relative;	
+	position: relative;
 	margin:  20vh auto;
 	max-width: 350px;
 }
-  
+
 /* Select the image and make it absolute to the container */
 .swap-on-hover img {
 	position: absolute;
@@ -487,7 +486,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	width: 350px;
 	height: 350px;
 }
-  
+
 .swap-on-hover .swap-on-hover__front-image {
 	z-index: 9999;
 	transition: opacity .5s linear;
@@ -509,7 +508,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	height: 30px;
 	width: auto;
 }
-  
+
 .progress-value-1 {
 	animation: load-1 10s normal forwards;
 	box-shadow: 0 10px 40px -10px #fff;
@@ -601,14 +600,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	#about .about-text {
 		margin-left: 10px;
 		margin-top: 0;
-	}	
+	}
 }
 
 @media (max-width: 425px) {
 	#about .about-text {
 		margin-left: 10px;
 		margin-top: 0;
-	}	
+	}
 
 	.intro {
 		background: url(../images/Mobile.png) repeat center center fixed;
